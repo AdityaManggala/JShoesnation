@@ -38,7 +38,7 @@ class orderModel
 		$tgl_msk,
 		$tgl_kluar,
 		$totBayar_treatment,
-		$desc,
+		$desc
 	) {
 		$query_treatment = "INSERT INTO transaksi(id_order,id_user,nama_cust,nomor_cust,alamat_cust,id_treatment,jmlh_treatment,hrg_treatment,tgl_masuk,tgl_keluar,total_hrg,deskripsi,status) 
 	VALUES ( '$orderNum_treat',$id_user,'$nama_cus','$no_telp','$alamat','$jen_treatment',$jmlh_treatment,$biaya_treat,'$tgl_msk','$tgl_kluar',$totBayar_treatment,'$desc',0 );";

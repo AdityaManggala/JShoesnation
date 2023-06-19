@@ -74,7 +74,7 @@ class orderController
                 $tgl_msk,
                 $tgl_kluar,
                 $totBayar_treatment,
-                $desc,
+                $desc
             );
             header("location: index.php?page=home&aksi=view");
         }
@@ -93,7 +93,7 @@ class orderController
     {
         $nomor_order = $_GET['id'];
         $this->model->deleteOrder($nomor_order);
-        header("location: index.php?page=admin&aksi=view");
+        header("location: index.php?page=karyawan&aksi=view");
     }
     public function Order()
     {
